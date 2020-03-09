@@ -1,0 +1,73 @@
+.header {
+    &__list {
+        float: right; 
+        animation: moveinright 1s ease-out;
+        margin-bottom: 1rem;
+       
+    }
+    &__item {
+        display: inline-block;
+        list-style-type: none;
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+        margin-top: .5rem;
+    
+        &:hover {
+            transform: skewY(-7deg) scale(1.3);
+            border-bottom: solid 1px $color-grey;
+        }
+    }
+
+
+    &__logo-box {
+        animation: moveinleft 1s ease-out;
+    }
+    &__logo-link {
+        text-decoration: none;
+        color: $color-black;
+        background-image: url('/image/logo_01.png');
+        //background-image: url('https://i.imgur.com/0gbiViM.png');
+        width: 170px;
+        height: 36px;
+        white-space: nowrap;
+        text-indent: 101%;
+        overflow: hidden;
+        float: left;
+            &:hover {
+                transform: translateY(-.8rem) scale(1.1) skewY(7deg);
+            }
+    }
+    
+    &__link {
+        float: right;
+        font-size: 200%;
+    }
+
+    &__linkitem {
+        margin-bottom: 2rem;
+        display: inline-block;
+        list-style-type: none;
+        background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        -webkit-background-clip: text;
+        -ms-background-clip:text;
+        -moz-background-clip: text;
+        &:hover {
+            transform: translateY(-1rem) scale(1.1);
+            background-image: linear-gradient(to right bottom, $color-yellow, $color-orangered);
+        }
+    }
+
+    &__linktext {
+        text-decoration: none;
+        color: transparent;
+    }
+
+    &__clearfix {
+        @include clearfix;
+    }
+
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="前端線上學習課程，手把手教您學到會" />
+    <meta name="keywords" content="HexSchool, 前端學習, 六角學院" />
+    <meta property="og:title" content="HexSchool" />
+    <meta property="og:description" content="HexSchool 前端線上學習課程" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="#" />
+    <link rel="shortcut icon" href="image/icon.png">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Hex School</title>
+    <script type="text/javascript">
+            var i=0, imgArr=Array();
+            imgArr[0] = "/image/hexbanner.png";
+            imgArr[1] = "/image/banner2.png";
+            imgArr[2] = "/image/f2e_books.png";
+            imgArr[3] = "/image/fc6b2ad4e6939507af1b60af913d9071da8cc81c.png";
+        
+            function showImg(){
+            document.getElementById('I').src = imgArr[i];
+            i = (i+1) % 4;
+        }
+        
+        function s(){
+            setInterval(showImg, 1500);
+        }
+        </script>
+</head>
+<body onload="s()">
+    <div class="mouseImg"><img  class ="mouseImg__BIMG" src="/image/pic.png" alt="#"></div>
+    <header class="header">
+        <ul class="header__list">
+            <li class="header__item"><a href="#" class="header__link"><img src="image/twitter_02.png" alt="Twitter link" class="header__img"></a></li>
+            <li class="header__item"><a href="#" class="header__link"><img src="image/fb_02.png" alt="Facebook link" class="header__img"></a></li>
+        </ul>
+        <div class="header__clearfix"></div>
+        <div class="header__logo-box">
+            <h1 class="header__logo-text"><a href="#" class="header__logo-link">Hex School</a></h1>
+            <ul class="header__link">
+                <li class="header__linkitem"><a href="#" class="header__linktext">首頁</a></li>
+                <li class="header__linkitem"><a href="#" class="header__linktext">產品介紹</a></li>
+                <li class="header__linkitem"><a href="#" class="header__linktext">聯絡我們</a></li>
+            </ul>
+        </div>
+        <div class="header__clearfix"></div>
+    </header>
+    <section class="banner">
+        <img id="I" src="/image/banner2.png" alt="HexSchool Flag" class="banner__img">
+        <figcaption  class="banner__welcome">歡迎加入六角學院，學習前端技術</figcaption>
+    </section>
+    <section class="intro">
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="cards">
+                    <div class="cards__side cards__side--front">
+                        <img src="/image/img_html5.png" alt="Html5" class="cards__img">
+                        <h2 class="cards__sub">Ｈtml5 基礎教學</h2>
+                        <p class="cards__text cards__text--1">主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式學習，而是透過實際的範例，了解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。</p>                        
+                    </div>
+                    <div class="cards__side cards__side--back cards__side--back--1">
+                        <div class="cards__cta">
+                            <div class="cards__morelink">See more</div>
+                            <a href="#" class="btn btn--white">Click me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="cards">
+                    <div class="cards__side cards__side--front">
+                        <img src="/image/img_responsive.png" alt="RWD" class="cards__img">
+                        <h2 class="cards__sub cards__sub--rwd">響應式網站設計</h2>
+                        <p class="cards__text cards__text--1">響應式網站設計(Responsiv web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式網站開發方法，讓學生了解行動版開發技巧。</p>                        
+                    </div>
+                    <div class="cards__side cards__side--back cards__side--back--2">
+                        <div class="cards__cta">
+                            <div class="cards__morelink">See more</div>
+                            <a href="#" class="btn btn--white">Click me</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="cards">
+                    <div class="cards__side cards__side--front">
+                        <img src="/image/img_jquery.png" alt="RWD" class="cards__img">
+                        <h2 class="cards__sub cards__sub--jq">JQuery實戰教學</h2>
+                        <p class="cards__text cards__text--2">本課程有以下特色</p>
+                        <ul class="cards__list">
+                            <li class="cards__item">了解變數的使用方法</li>
+                            <li class="cards__item">學習並操作 ＤＯＭ</li>
+                            <li class="cards__item">學習基本數學運算方法</li>
+                            <li class="cards__item">套件的操作及運用</li>
+                        </ul>                        
+                    </div>
+                    <div class="cards__side cards__side--back cards__side--back--3">
+                        <div class="cards__cta">
+                            <div class="cards__morelink">See more</div>
+                            <a href="#" class="btn btn--white">Click me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- 960 版型 四格待重新調整寬距
+        <section class="grid-text">
+            <div class="row">
+                <div class="col-1-of-2">
+                    col 1 0f 2
+                </div>
+                <div class="col-1-of-2">
+                    col 1 0f 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    col 1 0f 3
+                </div>
+                <div class="col-1-of-3">
+                    col 1 0f 3
+                </div>
+                <div class="col-1-of-3">
+                    col 1 0f 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    col 1 0f 3
+                </div>
+                <div class="col-2-of-3">
+                    col 2 0f 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+                <div class="col-2-of-4">
+                    col 2 0f 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    col 1 0f 4
+                </div>
+                <div class="col-3-of-4">
+                    col 3 0f 4
+                </div>
+            </div>
+       
+        </section>
+    -->
+    <script>
+        let body = document.body;
+        let mouseImg = document.querySelector('.mouseImg');
+        function GetPosition(e) {
+            mouseImg.style.left = e.clientX+ 10 +'px';
+            mouseImg.style.top = e.clientY+ 10 +'px';
+        }
+        body.addEventListener('mousemove', GetPosition, false);
+    </script>
+</body>
+</html>

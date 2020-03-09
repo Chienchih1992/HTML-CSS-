@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/starter/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Section 5: Advanced JavaScript: Objects and Functions</title>
+        <script>
+            document.addEventListener(`DOMContentLoaded`, function () {
+                document.getElementById(`div1`).style.color = `red`;
+            });
+            
+        
+        </script>
+    </head>
+
+    <body style="">
+        <h1 id="title">Section 5: Advanced JavaScript: Objects and Functions</h1>
+        <button class="btn-lottery">Ｃlick Me</button>
+        <p class="lottery-return"></p>
+        <button class="btn-2">Click</button>
+        <div id="div1" style="color: red;"><p>apple</p><p>orange</p><p>banana</p></div>
+        <!--<ul id="myList"></ul>-->
+        <label class="lb1">labe <input type="checkbox" name="chkbox" id="chkbox">checkbox</label>
+        <ul id="myList">
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+        </ul>
+        <a href="http://www.google.com/">aaaaaa</a>
+        <p class="low">ABCDEFG</p>
+        <span class="size"></span>
+        <input type="text" class="textBox" size="35" maxlength="10">
+        <textarea name="undefind" id="undefind" cols="40" rows="5" placeholder="typing somthing"></textarea>
+        <select name="undefine" class="select1">
+            <option value="台北市">台北市</option>
+            <option value="新北市">新北市</option>
+            <option value="桃園市">桃園市</option>
+            <option value="新竹市">新竹市</option>
+            <option value="苗栗市">苗栗市</option>
+            <option value="台中市">台中市</option>
+
+        </select>
+        <input type="password" autocomplete="on">
+        <button class="btn-3">Click me</button>
+        <script src="./Section 5_ Advanced JavaScript_ Objects and Functions_files/script.js"></script>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
